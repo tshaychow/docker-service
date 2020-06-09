@@ -9,7 +9,7 @@ api = Api(app)
 class Content(Resource):
     def get(self): 
         return{
-            'output':json.dumps((np.random.normal(0,1,100)).tolist())
+            'output': json.dumps((np.random.normal(0,1,10000)).tolist())
         }
 
 
